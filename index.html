@@ -356,6 +356,14 @@ footer address{font-style:normal}
 .footer-links a{color:rgba(0,0,0,.6);text-decoration:none}.footer-links a:hover{color:#0078c1;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:1100px){footer{font-size:17px;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) auto}}
 @media(max-width:760px){footer{grid-template-columns:1fr;align-items:start;gap:16px;font-size:16px;padding:28px 4px 40px;margin-top:40px}.footer-links{align-items:flex-start;text-align:left}}
+/* Mobile hero: headline, then unmasked video, then call box */
+@media(max-width:760px){
+.hero-card{flex-direction:column}
+.hero-copy{display:contents}
+.hero-head{order:1}
+.hero-media{order:2;-webkit-mask:none;mask:none;width:100%;flex:none;aspect-ratio:16/11}
+.hero-callout{order:3}
+}
 </style></head><body>
 <svg style="display:none" xmlns="http://www.w3.org/2000/svg"><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol><symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol><symbol id="pay" viewBox="0 0 32 32"><path d="M8 4h16v24l-4-2-4 2-4-2-4 2V4Z M12 10h8m-8 5h5m-5 5h8"/></symbol><symbol id="contract" viewBox="0 0 32 32"><path d="M20 4H7v24h18V14M12 11h4m-4 5h3m-3 5h8M20 16l-4 1 1-4L26 4l3 3-9 9Z"/></symbol><symbol id="project" viewBox="0 0 32 32"><path d="M5 25h22M7 21v-6a9 9 0 0 1 6-8m6 0a9 9 0 0 1 6 8v6M13 13V5h6v8M4 21h24v4H4Z"/></symbol><symbol id="person" viewBox="0 0 32 32"><circle cx="16" cy="10" r="5"/><path d="M6 28v-3a10 10 0 0 1 20 0v3"/></symbol><symbol id="phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.5 4-2 1.3a11 11 0 0 0 6.5 6.5l1.3-2 4 1.5v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z"/></symbol><symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol></svg>
 <header><a href="#" aria-label="LW Construction Law home"><img src="logo.svg" alt="LW Construction Law"></a><nav><a href="#help">How we help</a><a href="#team">Our people</a><button type="button" class="round" data-open-contact aria-label="Contact our team"><svg class="icon" aria-hidden="true"><use href="#mail"/></svg></button></nav></header>
